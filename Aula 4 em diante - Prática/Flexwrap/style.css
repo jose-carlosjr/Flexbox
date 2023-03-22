@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+    display: flex;
+    border: 5px solid white;
+    width: 500px; 
+    /* VALOR PADRÃO É flex-wrap: nowrap DISPOR OS ELEMENTOS NUMA ÚNICA LINHA E JAMAIS FAZER A QUEBRA DESSES ELEMENTOS*/
+    flex-wrap: wrap;
+}
