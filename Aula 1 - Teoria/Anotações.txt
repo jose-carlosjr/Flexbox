@@ -1,0 +1,13 @@
+Flexbox
+
+flexbox é unidimensional (trabalha com coluna OU linha)
+
+CSS Grid é bidimensional (trabalha com coluna E linha)
+
+Quando se trabalha com flexbox, o conteúdo dita o comportamento dela. No caso do CSS Grid é o contrário, o conteúdo se ajusta de acordo com a definição da grid.
+
+Dentro da Grid os espaços são pré-definidos, diferente da flexbox, onde a distribuição de espaços se dá em função de configurações totalmente relacionadas ao conteúdo em si.
+
+Flexbox é mais usado para porções de layouts, diferente da Grid que é para layouts completos.
+
+OBS: CSS Grid requer menos media queries
