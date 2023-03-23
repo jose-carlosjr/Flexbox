@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid white;
+    
+    /*
+    space-around - TODOS OS ELEMENTOS TEM O MSM ESPAÇAMENTO PRA ESQUERDA E PRA DIREITA, PORÉM METADE DO MESMO EM RELAÇÃO À BORDA
+    space-evenly - TODOS OS ELEMENTOS TEM O MSM ESPAÇAMENTO PRA ESQUERDA E DIREITA, INCLUSIVE EM RELAÇÃO À BORDA
+    space-between - TODOS OS ELEMENTOS TEM O MSM ESPAÇAMENTO, PORÉM O PRIMEIRO E O ÚLTIMO FICAM DISPOSTOS NAS EXTREMIDADES
+    */
+}
