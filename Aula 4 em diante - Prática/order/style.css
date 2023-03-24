@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 40em) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container div:nth-child(4) {
+        order: -1;
+    }
+}
+
+/*
+    TODOS OS ELEMENTOS INICIAM NO order: 0;
+
+    APARTIR DO MOMENTO EM QUE UM DELES RECEBE POR EXEMPLO order: 1;
+    ELE PASSA A SER O "MAIOR" ELEMENTO PORQUE 1 É MAIOR Q 0, POR
+    ESSE MOTIVO ELE VAI PRO FINAL DA LISTA
+
+    VALORES NEGATIVOS TAMBÉM FUNCIONAM
+
+    VALORES IGUAIS DE order PREVALECE A ORDEM NO HTML
+*/
