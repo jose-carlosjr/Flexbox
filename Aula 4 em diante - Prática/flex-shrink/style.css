@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+    display: flex;
+    border: 2px solid white;
+    width: 400px;
+}
+
+.container div {
+    margin: 0;
+    padding: 0px; /* SEMPRE LEMBRAR DE TIRAR O PADDING PRA USAR FLEX-SHRINK*/
+    width: 150px;
+    flex-shrink: 1;
+}
+
+.container div:nth-child(2) {
+    flex-shrink: 3;
+}
+
+.container div:nth-child(3) {
+    
+}

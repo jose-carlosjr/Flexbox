@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+    display: flex;
+    border: 5px solid white;
+    width: 800px;
+}
+
+.container div {
+    padding: 20px 0px;
+    margin: 0px;
+    flex: 1 1 100px;
+    
+    /*FLEX-BASIS DEFINE O VALOR INICIAL DE UM FLEX-ITEM. VALE TANTO PARA ALTURA E LARGURA*/
+    /*É IMPORTANTE USÁ-LO QUANDO SE LIDA COM AUMENTO E DIMINUIÇÃO DOS ITEMS (FLEX-GROW E FLEX-SHRINK)*/
+
+    /*
+        PROCESSO PARA QUE O FLEXBOX CALCULE A DIMENSÃO DE UM ITEM:
+
+        VERIFICA flex-basis PARA SABER SE HÁ ALGUMA LARGURA OU ALTURA INICIAL
+        VERIFICA SE O CONTAINER POSSUI ESPAÇO SOBRANDO OU FALTANDO. CASOS EM QUE flex-grow E flex-shrink SÃO BEM ÚTEIS
+        COM BASE NISSO E NOS VALORES DESSAS DUAS PROPRIEDADES, CALCULA-SE AS COTAS DE ESPAÇOS PARA CADA ITEM CRESCER OU DIMINUIR
+    */
+
+    /*SHORTHAND: flex: 1 1 100px; flex-grow, flex-shrink e flex-basis*/
+}
+
+.container div:nth-child(2) {
+    flex-shrink: 2;
+}
+
+.container div:nth-child(3) {
+    
+}
