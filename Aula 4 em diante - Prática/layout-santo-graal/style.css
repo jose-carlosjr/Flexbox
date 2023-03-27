@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 10px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+body.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.sidebar,
+.ads {
+    flex-basis:100px ;
+}
+
+
+
+@media (min-width: 56.26em) {
+    .content {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        order: -1;
+        background-color: purple;
+    }
+}

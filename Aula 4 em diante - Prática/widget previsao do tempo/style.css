@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+html {
+    /*direction: rtl;*/
+}
+
+body {
+    background-color: #fc4a1ad9;
+}
+
+.container > * {
+    background-color: #ffffff40;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 10px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: all 150ms ease;
+}
+
+.container > *:hover {
+    background-color: #ffffff66;
+}
+
+.container {
+
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather > div {
+    margin: 10px 0;
+}
+
+.weather-period {
+    flex: 1;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.weather-icon {
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+}
+
+.weather-min {
+    font-weight: 700;
+}
+
+.weather-min::after {
+    content: '-';
+}
+
+@media (min-width: 37.5em) /*600px*/ {
+    .weather {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .weather > div {
+        margin: 0 50px;
+    }
+
+    .weather-period {
+        font-size: 1.5rem;
+        min-width: 50px;
+        text-align: left;
+    }
+
+    .weather-minmax {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather-min::after {
+        content: '';
+    }
+}
+
+@media (min-width: 58.25em) { /*900px*/
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weather {
+        flex-basis: 100px;
+        flex-direction: column;
+    }
+
+    .weather > div {
+        margin: 10px 0;
+    }
+
+    .weather-period {
+        flex-basis: 100px;
+    }
+}
